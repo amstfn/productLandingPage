@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+#page-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#header-img {
+    width: max(22vw, 300px);
+    aspect-ratio: 35 / 4;
+}
+
+#header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0;
+    background-color: #eee;
+}
+
+#nav-bar-list {
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#nav-bar > ul > li {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black
+}
+
+
+#about-page {
+    width: 100vw;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+#form {
+    margin: 0 auto 0 auto;
+    width: 250px
+}
+
+#email {
+    width: 250px
+}
+
+#submit {
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(237, 185, 88);
+    border-style: none;
+    font-weight: bold;
+}
+
+#features {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.describe {
+    display: inline-block;
+    flex-basis: 80%;
+}
+
+.describe > h2 , p {
+    margin: 0;
+}
+
+.logo {
+    flex-basis: 20%;
+    padding: 45px 50px 50px  50px
+}
+.line-maker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-fire, .fa-truck, .fa-battery-full {
+    color: orange
+}
+
+#how-it-works {
+    width: 560px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#prices {
+    width: 950px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.frame {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.head {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(190, 189, 189);
+    text-align: center;
+    padding-top: 16px;
+    font-weight: bold;
+}
+
+.price {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px
+}
+
+.about-frame {
+    width: 100%;
+    height: 130px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    text-align: center;
+    list-style: none;
+    padding-right: 30px;
+
+}
+
+.item {
+    margin-top: 5px
+}
+
+.select-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(233, 178, 76);
+    border-radius: 0px;
+    border-style: none;
+    font-weight: bold;
+}
+
+footer {
+    width: 1000px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: rgb(207, 207, 207);
+    text-align: end;
+}
+
+footer > p{
+    margin-right: 20px;
+    color: #747373;
+    margin-top: 0;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+footer > ul > li {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+footer > ul:last-of-type {
+    margin-right: 20px;
+}
+
+@media (max-width: 700px) {
+    #features {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    #prices {
+        width: 400px;
+        height: 950px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .frame {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        
+    }
+
+    footer {
+        width: 500px;
+        height: 90px;
+        margin: 0 auto;
+        background-color: rgb(207, 207, 207);
+        text-align: end;
+    }
+    
+    footer > p{
+        margin-right: 20px;
+        color: #747373;
+        margin-top: 0;
+    }
+
+    footer > ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        margin-bottom: 5px;
+    }
+    
+    footer > ul > li {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    
+    footer > ul:last-of-type {
+        margin-right: 20px;
+    }
+}
